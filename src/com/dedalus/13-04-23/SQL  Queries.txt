@@ -1,0 +1,9 @@
+No 14:
+--39. List all the unique jobs along with deptno.
+select distinct job, deptno from emp order by job asc
+
+--40. List all the details of ‘Miller’.
+select * from emp e join dept d using (deptno) where ename = 'MILLER'
+
+--41. list the details of dept 10.
+select * from emp join dept using (deptno)  where deptno =  10
